@@ -1,0 +1,8 @@
+<li data-ng-class="{done:$ctrl.task.done}">
+    <form data-ng-submit="edit($ctrl.task)">
+        <input type="checkbox" data-ng-click="markAsDone($ctrl.task)" data-ng-checked="$ctrl.task.done" />
+        <span data-ng-dblclick="edit($ctrl.task)" data-ng-hide="$ctrl.task.hidden">{{$ctrl.task.label}}</span>
+        <input type="text" data-ng-show="$ctrl.task.hidden" data-ng-model="$ctrl.task.label" />
+        <input type="button" value="x" data-ng-click="delete($ctrl.task)" />
+    </form>
+</li>
