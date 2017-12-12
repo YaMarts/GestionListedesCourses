@@ -3,7 +3,6 @@ package Fr.PoleEmploi.GestionListedesCourses.endpoint;
 import java.awt.List;
 
 import javax.enterprise.context.RequestScoped;
-import javax.enterprise.inject.Produces;
 import javax.inject.Inject;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
@@ -31,7 +30,8 @@ public class MesCoursesRessources {
 		if (limit == null) {
 			limit = DEFAULT_PAGE_SIZE;
 		}
-		java.util.List<MesCourses> mescourses = MesCoursesDao.findAll(from, limit);
+		@SuppressWarnings("unused")
+		java.util.List<MesCourses> mescourses = MesCoursesDao.findAll(from,limit);
 		return (List) mescoursesDao;
 	}
 

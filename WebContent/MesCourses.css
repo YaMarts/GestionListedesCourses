@@ -1,3 +1,80 @@
-.done {
-    text-decoration: line-through;
+input.ng-valid {
+  border: 3px solid blue;
 }
+
+input.ng-invalid.ng-dirty {
+  border: 5px solid red;
+}
+
+ form {
+ background-color:#FFF8DC;
+ padding:5px;
+ width:800px;
+ }
+  
+ legend{
+ font-weight: bold;
+ font-size: 25px;
+ border: 
+ }
+ 
+ #entete {
+ max-width: 40%;float: left;
+ }
+ 
+
+ 
+ #entete div#produits {
+ height : 400px
+  }
+  
+   #entete div, #saisie div {
+  height: 20px;
+  
+ }
+ 
+ #section1{
+ padding: 10px;
+ margin: 20px àpx
+ 
+  }
+  
+ #section2{
+ padding: 10px;
+ margin: 20px àpx
+ 
+  }
+  
+  #section1: hover,#section2 hover{
+  
+  }
+  
+  #section1 input {
+ 
+  
+  }
+  
+   #section2 input {
+  width: 20px;
+  height: 20px;
+  
+  }
+  
+  #section1 label {
+  display: inline-block;
+   width: 300px;
+   padding: 20px 0px 25px 40px;
+  
+  }
+  
+   #section2 label {
+   display: inline-block;
+   width: 1500px;
+   padding: 10px 0px 15px 20px;
+  
+  }
+  
+  input [type="submit"] [type="reset"]{
+  float: right;
+  padding: 10px
+  }

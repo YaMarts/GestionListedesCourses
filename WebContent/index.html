@@ -1,9 +1,110 @@
 <!DOCTYPE html>
-<html>
- <head>
-  <meta charset="UTF-8">
-</head> 
-<body>
-MesCourses
-</body>
+
+<html  data-ng-app="app">
+
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="./MesCourses.js"></script>
+    <link rel="stylesheet" href="MesCourses.css">
+
+  	<meta charset="utf-8">
+  	<meta name="description" content="Mise en forme de formulaire HTML">
+  	<meta name="keywords" content="HTML,Formulaire MesCourses">
+  	<meta name="author" content="Martinel Angossio Fila">
+
+  	<title>Mes Courses</title>
+	
+  </head>
+
+  <body data-ng-controller="form">
+  <form action="resultat.html" method="get" name="monForm">
+  		<fieldset>
+  			<legend>Mes Courses</legend>
+	  		<div id="entete">
+	  			
+	  			<div class="date">
+	  				<label>Date</label>
+	  			</div>
+	  				  				  								
+	  			<div class="enseignes">
+	  				<label>Enseignes</label>
+	  			</div>
+	  			
+	  			<div class="villes">
+	  				<label>Villes</label>
+	  			</div>
+	  			
+	  			<div id="produits" class="Produits">
+	  				<label >Produits</label>
+	  			</div>
+
+	  		</div>
+	  		
+	  		<div id="saisie">
+	  		
+	  		<div class="date">
+	  			<input type="date" id="bday" name="bday">  		
+	  		</div>
+	  			 
+ 			 	  			 			
+	  			<div class="Enseignes">
+	  				<input type="radio" id=Enseignes name="Enseignes" value="Carrefour" data-ng-model="user.Enseignes" ><label for="Carrefour">Carrefour</label>
+	  				<input type="radio" id="Enseignes" name="Enseignes" value="SuperU" data-ng-model="user.Enseignes"><label for="SuperU">SuperU</label>
+	  				<input type="radio" id="Enseignes" name="Enseignes" value="Leclerc" data-ng-model="user.Enseignes"><label for="Leclerc">Leclerc</label>
+	  				<input type="radio" id="Enseignes" name="Enseignes" value="Super G20" data-ng-model="user.Enseignes"><label for="Super G20">Super G20</label>
+	  				<input type="radio" id="Enseignes" name="Enseignes" value="Les Galeries Lafayette" data-ng-model="user.Enseignes"><label for="Les Galeries Lafayette">Les Galeries Lafayette</label>
+	  				<input type="radio" id=Enseignes name="Enseignes" value="Séphora" data-ng-model="user.Enseignes" ><label for="Séphora">Séphora</label>
+	  			</div>
+	  			 		
+	  				
+	  			<div class="villes">
+	  				<select id="Villes" name="Enseignes" data-ng-model="user.Produits" required>
+	  					<option value="fr">Montgeron</option>
+	  					<option value="fr">Brétigny sur Orge</option>
+	  					<option value="fr">Evry</option>
+	  					<option value="fr">Vigneux sur Seine</option>
+	  					<option value="fr">Montreuil</option>
+	  					<option value="fr">Viry Chatillon</option>
+	  					<option value="fr">Paris</option>
+	  				</select>
+	  				
+	  				<div class="Produits">
+	  				<input type="checkbox" id="Alimentaires" value="Alimentaires" checked="checked"><label for="Alimentaires">Alimentaires</label>
+	  				<input type="checkbox" id="Entretiens" value="Entretiens" checked="checked"><label for="Entretiens">Entretiens</label>
+	  				<input type="checkbox" id="Beayté&Mode" value="Beayté&Mode"><label for="Beayté&Mode">Beayté&Mode</label>
+	  			</div>
+	  			
+	  			<div class="Produits">
+	  				<select id="Produits" name="Produits" multiple="multiple" size="20">
+	  					<option value="Parfum">Parfum</option>
+	  					<option value="pommes">Pommes</option>
+	  					<option value="parfum">Parfum</option>
+	  					<option value="ordinateurs">ordinateurs</option>
+	  					<option value="viandes">Viandes</option>
+	  					<option value="poulet">Poulet</option>
+	  					<option value="tomates">Tomates</option>
+	  					<option value="lait">Lait</option>
+	  					<option value="poisson">Poisson</option>
+	  					<option value="lessive" >Lessive</option>
+	  					<option value="gel douche">Gel douche</option>
+	  					<option value="eau de javel">Eau de javel</option>
+	  					<option value="Beurre">Beurre</option>
+	  					<option value="sucre">Sucre</option>
+	  					<option value="jambon">Jambon</option>
+	  					
+	  				</select>
+	  			</div>
+	  			
+	  		</div>
+	  	  </fieldset>
+	  	  	  	    	  
+	  	 <div class="boutons">
+
+	  	  	<input type="submit" id="btnSubmit" value="Soumettre formulaire" data-ng-model="user.submit">
+
+	  	  	<input type="reset" value="Effacer" data-ng-model="user.reset">
+
+	  	  </div>
+	  </form>
+	 </body>
 </html>
